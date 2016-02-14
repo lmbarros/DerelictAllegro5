@@ -60,7 +60,7 @@ nothrow {
 }
 
 
-extern( C ) nothrow {
+extern( C ) nothrow @nogc {
     // altime.h
     alias da_al_get_time = double function();
     alias da_al_rest = void function( double );
