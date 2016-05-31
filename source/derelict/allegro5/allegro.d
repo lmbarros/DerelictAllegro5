@@ -101,6 +101,7 @@ class DerelictAllegro5Loader : SharedLibLoader {
         bindFunc( cast( void** )&al_is_sub_bitmap, "al_is_sub_bitmap" );
         bindFunc( cast( void** )&al_get_parent_bitmap, "al_get_parent_bitmap" );
         bindFunc( cast( void** )&al_clone_bitmap, "al_clone_bitmap" );
+        bindFunc( cast( void** )&al_convert_bitmap, "al_convert_bitmap" );
         bindFunc( cast( void** )&al_draw_bitmap, "al_draw_bitmap" );
         bindFunc( cast( void** )&al_draw_bitmap_region, "al_draw_bitmap_region" );
         bindFunc( cast( void** )&al_draw_scaled_bitmap, "al_draw_scaled_bitmap" );

@@ -102,6 +102,7 @@ extern(C) @nogc nothrow {
     alias da_al_get_parent_bitmap = ALLEGRO_BITMAP* function(ALLEGRO_BITMAP*);
 
     alias da_al_clone_bitmap = ALLEGRO_BITMAP* function(ALLEGRO_BITMAP*);
+    alias da_al_convert_bitmap = void function(ALLEGRO_BITMAP*);
 
     // bitmap_draw.h
     alias da_al_draw_bitmap = void function(ALLEGRO_BITMAP*, float, float, int);
@@ -579,6 +580,7 @@ __gshared {
     da_al_is_sub_bitmap al_is_sub_bitmap;
     da_al_get_parent_bitmap al_get_parent_bitmap;
     da_al_clone_bitmap al_clone_bitmap;
+    da_al_convert_bitmap al_convert_bitmap;
     da_al_draw_bitmap al_draw_bitmap;
     da_al_draw_bitmap_region al_draw_bitmap_region;
     da_al_draw_scaled_bitmap al_draw_scaled_bitmap;
